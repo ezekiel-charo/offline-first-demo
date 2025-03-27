@@ -15,6 +15,8 @@ export class TodoAddComponent {
 
   addTodo(): void {
     const todo: Partial<Todo> = { task: this.todo.value, checked: false };
-    this.todoService.addTodo(todo).subscribe();
+    this.todoService.addTodo(todo).subscribe(() => {
+      this.todo.reset();
+    });
   }
 }
