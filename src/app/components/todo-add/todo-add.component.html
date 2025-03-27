@@ -1,2 +1,8 @@
-<input (keydown.enter)="addTodo()" type="text" placeholder="Enter task" [formControl]="todo" />
-<button style="margin-left: 4px" (click)="addTodo()">Add</button>
+<input
+  (keydown.enter)="addTodo()"
+  type="text"
+  class="task-input"
+  placeholder="Enter task"
+  [formControl]="todo"
+/>
+<button class="btn" (click)="addTodo()">Add</button>

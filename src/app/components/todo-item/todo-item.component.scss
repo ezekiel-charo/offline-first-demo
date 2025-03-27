@@ -1,0 +1,17 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  margin-left: 6px
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 8px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.todo-text {
+  flex-grow: 1;
+}
