@@ -1,0 +1,11 @@
+<div class="center">
+  <div style="margin-bottom: 12px; font-size: 18px">Todos</div>
+  <app-todo-add />
+  <ul style="margin-top: 24px">
+    @for(todo of (todos | async); track todo.id) {
+    <li style="margin-bottom: 8px">
+      <app-todo-item [todo]="todo" />
+    </li>
+    }
+  </ul>
+</div>

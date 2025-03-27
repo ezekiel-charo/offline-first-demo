@@ -15,7 +15,7 @@ export class TodoService {
     );
   }
 
-  addTodo(todo: Todo) {
+  addTodo(todo: Partial<Todo>) {
     return this.db.todosCollection$.pipe(
       switchMap((collection) => from(collection.insert(todo)))
     );
