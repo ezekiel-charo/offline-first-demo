@@ -14,6 +14,10 @@ export class TodoAddComponent {
   todo = new FormControl();
 
   addTodo(): void {
+    if (!this.todo.value) {
+      return;
+    }
+
     const todo: Partial<Todo> = { task: this.todo.value, checked: false };
     this.todoService.addTodo(todo).subscribe(() => {
       this.todo.reset();

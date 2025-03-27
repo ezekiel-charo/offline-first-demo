@@ -10,8 +10,8 @@
   padding: 8px;
   border: 1px solid black;
 
-  &:focus-within {
-    outline-color: rgb(24, 167, 24);
+  &:focus-visible {
+    border-color: rgb(24, 167, 24);
   }
 }
 
@@ -24,4 +24,5 @@
   border-radius: 4px;
   border: transparent;
   color: white;
+  cursor: pointer;
 }
